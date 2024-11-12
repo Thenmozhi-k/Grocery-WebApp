@@ -4,6 +4,7 @@ import ProductModel from "../models/product.model.js";
 
 export const AddCategoryController = async(request,response)=>{
     try {
+        console.log("Request body:", request.body);
         const { name , image } = request.body 
 
         if(!name || !image){
